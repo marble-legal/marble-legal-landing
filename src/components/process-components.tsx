@@ -42,7 +42,16 @@ const ProcessComponent = () => {
   return (
     <div className="process_component max-w-[1200px] px-4 transition-all">
       <div className="process_col-text sticky top-1/2 transform translate-y-1/2 w-1/2">
-        <div className="process_list flex flex-col gap-[2rem]">
+        <div className="process_list flex flex-col gap-[2.5rem] relative">
+          <Image
+            loading="lazy"
+            src="/line.svg"
+            alt="line"
+            height={300}
+            width={2}
+            className="absolute left-[11px] h-full"
+          />
+
           <div className="process_text flex flex-row items-center gap-3">
             <div className="w-fit self-start">
               <div className="process_icon transition-all">
