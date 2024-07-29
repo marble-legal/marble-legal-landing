@@ -10,7 +10,7 @@ export default function Features() {
   return (
     <section
       id="features"
-      className="md:py-[7.5rem] py-24 px-4 flex flex-col gap-[4rem]"
+      className="md:py-[7.5rem] py-24 px-4 flex flex-col md:gap-[4rem] gap-[2rem]"
     >
       <div className="flex flex-col gap-3 text-center items-center">
         <h3
@@ -26,7 +26,7 @@ export default function Features() {
           help you navigate any challenge.
         </p>
       </div>
-      <div className="flex flex-row flex-wrap gap-[1.5rem] px-4 max-w-[1100px] content-center">
+      <div className="flex flex-row flex-wrap md:gap-[1.5rem] gap-4 md:px-4 max-w-[1100px] content-center">
         <Card
           title="Real Estate Law"
           description="Expert advice for all your real estate legal needs, ensuring smooth transactions and compliance."
@@ -58,7 +58,9 @@ export default function Features() {
           image="/business.svg"
         />
       </div>
-      <Button size="large">Contact us</Button>
+      <Button size="large" className="px-[1.75rem] py-[1.1875rem] text-lg">
+        Contact us
+      </Button>
     </section>
   );
 }

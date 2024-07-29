@@ -10,7 +10,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="flex flex-col gap-[1.875rem] md:h-[80dvh] items-center justify-center w-full relative max-md:py-24 max-md:px-4"
+      className="flex flex-col gap-[1.875rem] md:h-[80dvh] items-center justify-center w-full relative max-md:py-[7.875rem] max-md:px-4"
     >
       <Image
         src="/about-bg.svg"

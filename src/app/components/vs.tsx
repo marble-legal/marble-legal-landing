@@ -10,7 +10,7 @@ export default function VS() {
   return (
     <section
       id="vs"
-      className="md:mt-[3.75rem] md:mb-[7.5rem] mb-8 mt-8 w-full md:px-[6.25rem] px-4 flex flex-col items-center"
+      className="md:mt-[3.75rem] md:mb-[7.5rem] md:my-8 my-[1.5rem] w-full md:px-[6.25rem] px-4 flex flex-col items-center"
     >
       <h3
         className={clsx(
@@ -22,10 +22,10 @@ export default function VS() {
         <br className="max-md:hidden" />
         <span className="text-[#4AA064]">Marble</span>
       </h3>
-      <p className="mt-[2rem] mb-[4rem] text-center text-[1.25rem]">
+      <p className="md:mt-[2rem] mt-[0.8125rem] md:mb-[4rem] mb-[2.5rem] text-center text-[1.25rem]">
         Save on legal costs with Marble
       </p>
-      <div className="flex flex-row max-md:flex-wrap gap-8 w-full">
+      <div className="flex flex-row max-md:flex-wrap md:gap-8 gap-4 w-full">
         <div className="bg-[#FFF8F7] rounded-[16px] w-full relative py-[4.625rem] px-[2.75rem] items-center justify-center flex flex-col gap-[1.4375rem]">
           <Image
             src="/red-hue.svg"
@@ -54,18 +54,24 @@ export default function VS() {
             >
               Lawyer
             </h4>
-            <ul className="flex flex-col gap-5 text-[1.25rem] text-[#0A100B] items-center [&_ol]:text-center">
+            <ul className="flex flex-col gap-5 md:text-[1.25rem] text-base text-[#0A100B] items-center [&_ol]:text-center [&_ol]:leading-[140%]">
               <ol className={outfit.className}>
                 Average hourly rate:{" "}
-                <span className="text-[#B85042]">$327/h</span>
+                <span className="text-[#B85042] text-[1.125rem] font-bold">
+                  $327/h
+                </span>
               </ol>
               <ol className={outfit.className}>
-                Average time spent on legal issues:{" "}
-                <span className="text-[#B85042]">5-7 hours</span>
+                Average time spent on legal issues: <br className="md:hidden" />
+                <span className="text-[#B85042] text-[1.125rem] font-bold">
+                  5-7 hours
+                </span>
               </ol>
               <ol className={outfit.className}>
                 Average cost for contract drafting:{" "}
-                <span className="text-[#B85042]">$200-$800</span>
+                <span className="text-[#B85042] text-[1.125rem] font-bold">
+                  $200-$800
+                </span>
               </ol>
             </ul>
           </div>
@@ -101,12 +107,10 @@ export default function VS() {
             <p
               className={clsx(
                 outfit.className,
-                "md:text-[1.75rem] text-[1.25rem] text-center text-[#0A100B]"
+                "md:text-[1.75rem] text-[1.25rem] text-center text-[#0A100B] leading-[140%]"
               )}
             >
-              Get unlimited benefits for less <br />
-              than{" "}
-              <span className="text-[#4AA064] font-bold">$100 a month</span>
+              Get unlimited benefits for the price of a cup of coffee a day
             </p>
           </div>
         </div>

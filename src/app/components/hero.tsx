@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Outfit } from "next/font/google";
 import clsx from "clsx";
 import Button from "@/components/button";
-import FaqCard from "@/components/faq-card";
+import Navbar from "./navbar";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
@@ -20,20 +20,7 @@ export default function Hero() {
       </div>
       <div className="relative z-10 w-full">
         {/* nav */}
-        <nav className="md:flex hidden justify-between items-center w-full px-[5rem] py-[1.25rem] border-b border-white">
-          <Image src="/logo.svg" alt="Marble Legal" width={48} height={36} />
-          <div className="flex flex-row gap-3">
-            <Button variant="primary" size="small">
-              Contact us
-            </Button>
-            <Button variant="secondary" size="small">
-              Create an account
-            </Button>
-            <Button variant="text" size="small">
-              Sign in
-            </Button>
-          </div>
-        </nav>
+        <Navbar />
         {/* hero */}
         <div className="flex flex-row max-md:flex-wrap justify-between items-center md:h-[80vh] md:pl-[8rem] md:pr-[2.5rem] px-4 py-8">
           <div className="flex flex-col max-w-[550px] z-10">
@@ -64,20 +51,24 @@ export default function Hero() {
               self-help tools and expert services.
             </h2>
             <div className="md:mt-[2.8125rem] mt-[1.5rem] flex flex-row gap-3 w-fit max-md:self-center">
-              <Button size="large" variant="primary">
+              <Button
+                size="large"
+                variant="primary"
+                className="max-md:h-[2.75rem]"
+              >
                 Contact us
               </Button>
               <Button
                 variant="secondary"
                 size="medium"
-                className="flex flex-row items-center gap-[0.625rem] max-md:text-[0.875rem]"
+                className="flex flex-row items-center gap-[0.625rem] max-md:text-[0.875rem] max-md:h-[2.75rem]"
               >
                 <Image
                   src="/play.svg"
                   alt="play"
                   width={20}
                   height={20}
-                  className="max-md:hidden"
+                  // className="max-md:hidden"
                 />
                 See demo
               </Button>
