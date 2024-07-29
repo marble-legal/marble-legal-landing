@@ -22,7 +22,7 @@ export default function Hero() {
         {/* nav */}
         <Navbar />
         {/* hero */}
-        <div className="flex flex-row max-md:flex-wrap justify-between items-center md:h-[80vh] md:pl-[8rem] md:pr-[2.5rem] px-4 py-8">
+        <div className="flex flex-row max-md:flex-wrap-reverse justify-between items-center md:h-[80vh] md:pl-[8rem] md:pr-[2.5rem] px-4 py-8 pb-[5rem]">
           <div className="flex flex-col max-w-[550px] z-10">
             <h1
               className={clsx(

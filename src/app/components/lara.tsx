@@ -29,7 +29,12 @@ export default function Lara() {
           </p>
         </div>
         <ProcessComponent />
-        <Button size="large">Join the waitlist</Button>
+        <Button
+          size="large"
+          className="max-md:px-[1.75rem] max-md:py-[0.875rem] max-md:text-[1.25rem]"
+        >
+          Join the waitlist
+        </Button>
       </div>
     </section>
   );

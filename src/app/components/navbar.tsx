@@ -24,6 +24,7 @@ export default function Navbar() {
           <Button variant="primary" size="small">
             Contact us
           </Button>
+          <Image src="/menu.svg" alt="menu" width={40} height={40} />
           {/* <Button variant="secondary" size="small">
               Create an account
             </Button>

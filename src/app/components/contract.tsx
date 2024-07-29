@@ -25,7 +25,7 @@ export default function Contract() {
       <div className="flex flex-col gap-[1.8125rem]">
         <h3
           className={clsx(
-            "font-black md:text-[4rem] text-[2.75rem] leading-[120%] max-w-[792px] max-md:text-center",
+            "font-black md:text-[4rem] text-[1.25rem] leading-[120%] max-w-[792px] max-md:text-center",
             outfit.className
           )}
         >
@@ -43,7 +43,7 @@ export default function Contract() {
         alt="edit-section"
         width={400}
         height={400}
-        className="z-[1] max-md:mt-[2.5rem]"
+        className="z-[1] max-md:mt-[2.5rem] max-md:w-[280px] max-md:mx-auto"
       />
     </section>
   );

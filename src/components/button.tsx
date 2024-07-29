@@ -21,7 +21,7 @@ const Button: React.FC<ButtonProps> = ({
   ...props
 }) => {
   const baseStyles =
-    "rounded-[10px] focus:outline-none w-fit mx-auto transition-all duration-200 ease-in-out tracking-[0.36px] leading-[100%] md:font-medium font-normal hover:opacity-90 hover:-translate-y-0.5";
+    "rounded-[10px] focus:outline-none w-fit mx-auto transition-all duration-200 ease-in-out tracking-[0.36px] leading-[100%] md:font-medium font-normal hover:-translate-y-0.5";
 
   const variantStyles = clsx({
     "text-white bg-[#B85042] shadow-[0px_13px_22.6px_0px_rgba(255,255,255,0.10)_inset,0px_0px_0px_2px_rgba(255,255,255,0.18)_inset] border-[#B85042] border":
