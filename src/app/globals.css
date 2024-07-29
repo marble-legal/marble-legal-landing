@@ -91,6 +91,7 @@
 }
 
 .process_description {
+  margin-top: 0.625rem;
   display: none;
   opacity: 0;
 }
