@@ -3,6 +3,7 @@ import { Outfit } from "next/font/google";
 import clsx from "clsx";
 import Button from "@/components/button";
 import FaqCard from "@/components/faq-card";
+import Link from "next/link";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
@@ -79,7 +80,14 @@ export default function Footer() {
           <span className="underline">Privacy policy</span>
         </span>
         <h6 className="text-[0.8125rem] font-medium text-[#919191] md:absolute bottom-0 left-0 max-md:mt-[1.5rem] max-md:mx-auto">
-          Developed by <span className="text-[#4AA064]">micro1.ai</span>
+          Developed by{" "}
+          <Link
+            href="https://micro1.ai"
+            target="_blank"
+            className="text-[#4AA064]"
+          >
+            micro1.ai
+          </Link>
         </h6>
       </div>
     </footer>
