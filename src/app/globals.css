@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+/* body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.process_component {
+  /* width: 100%; */
+  /* max-width: 76rem; */
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.process_col-text {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 35%;
+  transform: translate(0);
+  width: 50%;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  color: #5e4f4f;
+  font-weight: 400;
+}
+
+.process_col-img {
+  width: 50%;
+}
+
+.process_img-list {
+  /* grid-row-gap: 10rem; */
+  flex-direction: column;
+  display: flex;
+}
+
+.process_img {
+  width: 100%;
+  max-width: 48rem;
+  /* height: 33rem; */
+  position: relative;
+}
+
+.process_text.is-active .is-process_title {
+  font-weight: 700;
+  color: black;
+}
+
+.process_text.is-active .process_icon {
+  background: #dcd4c6;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  align-content: center;
+  display: grid;
+  justify-items: center;
+}
+
+.process_description {
+  display: none;
+  opacity: 0;
+}
+
+.process_text.is-active .process_description {
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+}
+
+.process_icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  align-content: center;
+  display: grid;
+  justify-items: center;
+  alig-self: center;
+}
+
+.process_description {
+  font-size: 1rem;
+  line-height: 160%;
+}
