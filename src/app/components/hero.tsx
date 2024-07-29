@@ -54,14 +54,14 @@ export default function Hero() {
               <Button
                 size="large"
                 variant="primary"
-                className="max-md:h-[2.75rem]"
+                className="max-md:h-[3rem]"
               >
                 Contact us
               </Button>
               <Button
                 variant="secondary"
                 size="medium"
-                className="flex flex-row items-center gap-[0.625rem] max-md:text-[0.875rem] max-md:h-[2.75rem]"
+                className="flex flex-row items-center gap-[0.625rem] max-md:text-[0.875rem] max-md:h-[3rem]"
               >
                 <Image
                   src="/play.svg"
