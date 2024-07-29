@@ -10,7 +10,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="flex flex-col gap-[1.875rem] md:h-[80dvh] items-center justify-center w-full relative max-md:py-[7.875rem] max-md:px-4"
+      className="flex flex-col gap-[1.875rem] md:h-[80dvh] items-center justify-center w-full relative max-md:py-[7.875rem] max-md:pb-[12rem] max-md:px-4"
     >
       <Image
         src="/about-bg.svg"
@@ -19,12 +19,22 @@ export default function About() {
         width={1920}
         height={1080}
         objectFit="none"
-        className="absolute bottom-0 left-0"
+        className="absolute bottom-0 left-0 max-md:hidden"
+        priority
+      />
+      <Image
+        src="/about-mobile-bg.svg"
+        alt="background"
+        layout="intrinsic"
+        width={1920}
+        height={1080}
+        objectFit="none"
+        className="absolute bottom-0 left-0 md:hidden"
         priority
       />
       <h3
         className={clsx(
-          "font-black md:text-[4rem] text-[2.75rem] leading-[120%]",
+          "font-black md:text-[4rem] text-[1.75rem] leading-[120%]",
           outfit.className
         )}
       >

@@ -48,7 +48,7 @@ export default function VS() {
             />
             <h4
               className={clsx(
-                "font-bold md:text-[2.25rem] text-[1.75rem] self-center",
+                "font-bold md:text-[2.25rem] text-[1.5rem] self-center",
                 outfit.className
               )}
             >
@@ -98,7 +98,7 @@ export default function VS() {
             />
             <h4
               className={clsx(
-                "font-bold md:text-[2.25rem] text-[1.75rem] self-center",
+                "font-bold md:text-[2.25rem] text-[1.5rem] self-center",
                 outfit.className
               )}
             >

@@ -15,7 +15,7 @@ export default function Testimonials() {
     >
       <h3
         className={clsx(
-          "font-black md:text-[4rem] text-[2.125rem] leading-[120%] max-w-[792px] text-center mx-auto",
+          "font-black md:text-[4rem] text-[1.75rem] leading-[120%] max-w-[792px] text-center mx-auto",
           outfit.className
         )}
       >

@@ -15,7 +15,7 @@ export default function Features() {
       <div className="flex flex-col gap-3 text-center items-center">
         <h3
           className={clsx(
-            "font-black md:text-[4rem] text-[2.75rem] leading-[120%] max-w-[792px]",
+            "font-black md:text-[4rem] text-[1.75rem] leading-[120%] max-w-[792px]",
             outfit.className
           )}
         >
@@ -58,7 +58,10 @@ export default function Features() {
           image="/business.svg"
         />
       </div>
-      <Button size="large" className="px-[1.75rem] py-[1.1875rem] text-lg">
+      <Button
+        size="large"
+        className="md:px-[1.75rem] md:py-[1.1875rem] text-lg"
+      >
         Contact us
       </Button>
     </section>

@@ -34,7 +34,7 @@ const Button: React.FC<ButtonProps> = ({
   const sizeStyles = clsx({
     "py-[0.75rem] px-[1.5rem] text-[0.875rem]": size === "small",
     "py-[0.75rem] px-[1.5rem] text-[1.125rem] font-normal": size === "medium",
-    "md:py-[1.1875rem] py-3 px-[1.75rem] md:text-[1.125rem] text-[0.875rem]":
+    "md:py-[1.1875rem] py-3 px-[1.75rem] md:text-[1.125rem] text-[1.125rem] max-md:h-[3rem]":
       size === "large",
   });
 

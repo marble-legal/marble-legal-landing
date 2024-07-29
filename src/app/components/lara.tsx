@@ -14,14 +14,14 @@ export default function Lara() {
         <div className="flex flex-col gap-[1.8125rem]">
           <h3
             className={clsx(
-              "font-black md:text-[4rem] text-[2rem] leading-[120%] max-w-[792px] text-center mx-auto",
+              "font-black md:text-[4rem] text-[1.75rem] leading-[120%] max-w-[792px] text-center mx-auto",
               outfit.className
             )}
           >
             <span className="text-[#4AA064]">LARA,</span> Your AI Legal
             Assistant Coming Soon!
           </h3>
-          <p className="leading-[180%] md:text-[1.25rem] text-base max-w-[792px] text-center mx-auto">
+          <p className="leading-[180%] md:text-[1.25rem] text-[0.875rem] max-w-[792px] text-center mx-auto">
             Get ready for LARA, the AI-powered legal assistant transforming
             legal tasks. From contract creation to business formation, LARA
             provides the tools and guidance to navigate the legal landscape with

@@ -14,7 +14,7 @@ export default function Faqs() {
     >
       <h3
         className={clsx(
-          "font-black md:text-[4rem] text-[2.75rem] leading-[120%] max-w-[792px] text-center",
+          "font-black md:text-[4rem] text-[1.75rem] leading-[120%] max-w-[792px] text-center",
           outfit.className
         )}
       >

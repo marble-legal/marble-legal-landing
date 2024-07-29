@@ -27,7 +27,7 @@ export default function Hero() {
             <h1
               className={clsx(
                 outfit.className,
-                "max-md:justify-center font-black md:text-[4.875rem] max-md:text-center text-[2.375rem] capitalize leading-[100%] flex flex-row gap-4 flex-wrap mb-[2rem]"
+                "max-md:justify-center font-black md:text-[4.875rem] max-md:text-center text-[2.375rem] capitalize leading-[100%] flex flex-row md:gap-4 gap-2 flex-wrap mb-[2rem]"
               )}
             >
               <span>Empower Your</span>
@@ -51,17 +51,13 @@ export default function Hero() {
               self-help tools and expert services.
             </h2>
             <div className="md:mt-[2.8125rem] mt-[1.5rem] flex flex-row gap-3 w-fit max-md:self-center">
-              <Button
-                size="large"
-                variant="primary"
-                className="max-md:h-[3rem]"
-              >
+              <Button size="large" variant="primary">
                 Contact us
               </Button>
               <Button
                 variant="secondary"
                 size="medium"
-                className="flex flex-row items-center gap-[0.625rem] max-md:text-[0.875rem] max-md:h-[3rem]"
+                className="flex flex-row items-center gap-[0.625rem]"
               >
                 <Image
                   src="/play.svg"
