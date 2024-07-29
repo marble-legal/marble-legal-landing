@@ -32,6 +32,13 @@
   }
 }
 
+.process_img-wrapper {
+  background: #ccfedc;
+  padding: 3.3438rem 1.5313rem;
+  border-radius: 1.625rem;
+  border: 1px solid rgba(52, 168, 83, 0.22);
+}
+
 .process_component {
   /* width: 100%; */
   /* max-width: 76rem; */
@@ -52,8 +59,8 @@
   top: 35%;
   transform: translate(0);
   width: 50%;
-  margin-left: 5rem;
-  margin-right: 5rem;
+  margin-left: auto;
+  margin-right: auto;
   color: #5e4f4f;
   font-weight: 400;
 }

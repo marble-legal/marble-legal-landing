@@ -40,7 +40,7 @@ const ProcessComponent = () => {
   }, []);
 
   return (
-    <div className="process_component max-w-[1200px] px-4 transition-all">
+    <div className="process_component max-w-[1100px] !mx-auto px-4 transition-all">
       <div className="process_col-text sticky top-1/2 transform translate-y-1/2 w-1/2">
         <div className="process_list flex flex-col gap-[2.5rem] relative">
           <Image
