@@ -56,23 +56,27 @@ export default function Hero() {
                 self-help tools and expert services.
               </h2>
               <div className="md:mt-[2.8125rem] mt-[1.5rem] flex flex-row gap-3 w-fit max-md:self-center">
-                <Button size="large" variant="primary">
-                  Contact us
-                </Button>
-                <Button
-                  variant="secondary"
-                  size="medium"
-                  className="flex flex-row items-center gap-[0.625rem]"
-                >
-                  <Image
-                    src="/play.svg"
-                    alt="play"
-                    width={20}
-                    height={20}
-                    // className="max-md:hidden"
-                  />
-                  See demo
-                </Button>
+                <Animated variant="moveFromBottom">
+                  <Button size="large" variant="primary">
+                    Contact us
+                  </Button>
+                </Animated>
+                <Animated variant="moveFromBottom" delay={0.1}>
+                  <Button
+                    variant="secondary"
+                    size="medium"
+                    className="flex flex-row items-center gap-[0.625rem] h-full"
+                  >
+                    <Image
+                      src="/play.svg"
+                      alt="play"
+                      width={20}
+                      height={20}
+                      // className="max-md:hidden"
+                    />
+                    See demo
+                  </Button>
+                </Animated>
               </div>
             </div>
           </Animated>
