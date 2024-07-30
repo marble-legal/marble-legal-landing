@@ -1,9 +1,11 @@
+"use client";
 import Image from "next/image";
 import { Outfit } from "next/font/google";
 import clsx from "clsx";
 import Button from "@/components/button";
 import FaqCard from "@/components/faq-card";
 import ProcessComponent from "@/components/process-components";
+import Animated from "@/components/animated";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
@@ -11,7 +13,7 @@ export default function Lara() {
   return (
     <section id="lara" className="w-full px-4">
       <div className="bg-[#E6FDEE] md:py-[7.5rem] py-10 max-md:px-4 w-full rounded-[30px] flex flex-col gap-[4rem]">
-        <div className="flex flex-col gap-[1.8125rem]">
+        <Animated className="flex flex-col gap-[1.8125rem]">
           <h3
             className={clsx(
               "font-black md:text-[4rem] text-[1.75rem] leading-[120%] max-w-[792px] text-center mx-auto",
@@ -27,18 +29,20 @@ export default function Lara() {
             provides the tools and guidance to navigate the legal landscape with
             ease. Below are some key features:
           </p>
-        </div>
+        </Animated>
         <div className="max-md:hidden">
           <ProcessComponent />
         </div>
         <MobileProcess />
 
-        <Button
-          size="large"
-          className="max-md:px-[1.75rem] max-md:py-[0.875rem] max-md:text-[1.25rem]"
-        >
-          Join the waitlist
-        </Button>
+        <Animated className="w-full flex flex-row justify-center">
+          <Button
+            size="large"
+            className="max-md:px-[1.75rem] max-md:py-[0.875rem] max-md:text-[1.25rem]"
+          >
+            Join the waitlist
+          </Button>
+        </Animated>
       </div>
     </section>
   );

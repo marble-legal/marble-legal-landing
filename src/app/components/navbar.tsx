@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button from "@/components/button";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -11,10 +12,12 @@ export default function Navbar() {
             Contact us
           </Button>
           <Button variant="secondary" size="small">
-            Create an account
+            <Link href="https://dev.app.marblels.com/register">
+              Create an account
+            </Link>
           </Button>
           <Button variant="text" size="small">
-            Sign in
+            <Link href="https://dev.app.marblels.com/login">Sign in</Link>
           </Button>
         </div>
       </nav>

@@ -3,6 +3,7 @@ import { Outfit } from "next/font/google";
 import clsx from "clsx";
 import Button from "@/components/button";
 import FaqCard from "@/components/faq-card";
+import Animated from "@/components/animated";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
@@ -12,21 +13,28 @@ export default function VS() {
       id="vs"
       className="md:mt-[3.75rem] md:mb-[7.5rem] md:my-8 my-[1.5rem] w-full md:px-[6.25rem] px-4 flex flex-col items-center"
     >
-      <h3
-        className={clsx(
-          "font-black md:text-[4rem] text-[2.75rem] leading-[120%] max-w-[792px] text-center",
-          outfit.className
-        )}
-      >
-        Hiring a <span className="text-[#B85042]">lawyer</span> vs using{" "}
-        <br className="max-md:hidden" />
-        <span className="text-[#4AA064]">Marble</span>
-      </h3>
-      <p className="md:mt-[2rem] mt-[0.8125rem] md:mb-[4rem] mb-[2.5rem] text-center text-[1.25rem]">
-        Save on legal costs with Marble
-      </p>
+      <Animated>
+        <h3
+          className={clsx(
+            "font-black md:text-[4rem] text-[2.75rem] leading-[120%] max-w-[792px] text-center",
+            outfit.className
+          )}
+        >
+          Hiring a <span className="text-[#B85042]">lawyer</span> vs using{" "}
+          <br className="max-md:hidden" />
+          <span className="text-[#4AA064]">Marble</span>
+        </h3>
+      </Animated>
+      <Animated>
+        <p className="md:mt-[2rem] mt-[0.8125rem] md:mb-[4rem] mb-[2.5rem] text-center text-[1.25rem]">
+          Save on legal costs with Marble
+        </p>
+      </Animated>
       <div className="flex flex-row max-md:flex-wrap md:gap-8 gap-4 w-full">
-        <div className="bg-[#FFF8F7] rounded-[16px] w-full relative py-[4.625rem] px-[2.75rem] items-center justify-center flex flex-col gap-[1.4375rem]">
+        <Animated
+          variant="moveFromBottom"
+          className="bg-[#FFF8F7] rounded-[16px] w-full relative py-[4.625rem] px-[2.75rem] items-center justify-center flex flex-col gap-[1.4375rem]"
+        >
           <Image
             src="/red-hue.svg"
             alt="red-hue"
@@ -75,8 +83,12 @@ export default function VS() {
               </ol>
             </ul>
           </div>
-        </div>
-        <div className="bg-[#F0FFF0] rounded-[16px] w-full relative py-[4.625rem] px-[2.75rem] items-center justify-center flex flex-col gap-[1.4375rem]">
+        </Animated>
+        <Animated
+          variant="moveFromBottom"
+          delay={0.25}
+          className="bg-[#F0FFF0] rounded-[16px] w-full relative py-[4.625rem] px-[2.75rem] items-center justify-center flex flex-col gap-[1.4375rem]"
+        >
           <Image
             src="/green-hue.svg"
             alt="red-hue"
@@ -113,7 +125,7 @@ export default function VS() {
               Get unlimited benefits for the price of a cup of coffee a day
             </p>
           </div>
-        </div>
+        </Animated>
       </div>
     </section>
   );
