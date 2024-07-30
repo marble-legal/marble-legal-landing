@@ -36,7 +36,7 @@ const Animated = forwardRef<HTMLDivElement, AnimatedProps>(
     const MotionComponent = motion(Component);
 
     return (
-      <MotionComponent
+      <motion.div
         ref={ref}
         initial="hidden"
         whileInView="visible"
@@ -46,7 +46,7 @@ const Animated = forwardRef<HTMLDivElement, AnimatedProps>(
         className={className}
       >
         {children}
-      </MotionComponent>
+      </motion.div>
     );
   }
 );

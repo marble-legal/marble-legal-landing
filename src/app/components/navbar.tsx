@@ -1,24 +1,35 @@
+"use client";
 import Image from "next/image";
 import Button from "@/components/button";
 import Link from "next/link";
+import ContactUsModal from "@/components/contactus-modal";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [showModal, setShowModal] = useState(false);
+  const handleModal = () => setShowModal(!showModal);
   return (
     <>
+      <ContactUsModal isOpen={showModal} handleClose={handleModal} />
       <nav className="md:flex hidden justify-between items-center w-full px-[5rem] py-[1.25rem] border-b border-white">
         <Image src="/logo.svg" alt="Marble Legal" width={48} height={36} />
         <div className="flex flex-row gap-3">
-          <Button variant="primary" size="small">
+          <Button variant="primary" size="small" onClick={handleModal}>
             Contact us
           </Button>
-          <Button variant="secondary" size="small">
-            <Link href="https://dev.app.marblels.com/register">
+          <Link href="https://dev.app.marblels.com/register">
+            <Button variant="secondary" size="small">
               Create an account
-            </Link>
-          </Button>
-          <Button variant="text" size="small">
-            <Link href="https://dev.app.marblels.com/login">Sign in</Link>
-          </Button>
+            </Button>
+          </Link>
+          <Link
+            href="https://dev.app.marblels.com/login"
+            className="self-center"
+          >
+            <Button variant="text" size="small">
+              Sign in
+            </Button>
+          </Link>
         </div>
       </nav>
       <nav className="flex md:hidden justify-between items-center w-full px-[1.5rem] py-[1.25rem] border-b border-white">

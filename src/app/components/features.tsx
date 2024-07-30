@@ -1,18 +1,26 @@
+"use client";
 import Image from "next/image";
 import { Outfit } from "next/font/google";
 import clsx from "clsx";
 import Button from "@/components/button";
 import FaqCard from "@/components/faq-card";
 import Animated from "@/components/animated";
+import ContactUsModal from "@/components/contactus-modal";
+import { useState } from "react";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
 export default function Features() {
+  const [showModal, setShowModal] = useState(false);
+  const handleModal = () => setShowModal(!showModal);
+
   return (
     <section
       id="features"
       className="md:py-[7.5rem] py-24 px-4 flex flex-col md:gap-[4rem] gap-[2rem]"
     >
+      <ContactUsModal isOpen={showModal} handleClose={handleModal} />
+
       <Animated>
         <div className="flex flex-col gap-3 text-center items-center">
           <h3
@@ -69,7 +77,7 @@ export default function Features() {
       </div>
 
       <Animated className="md:px-[1.75rem] md:py-[1.1875rem] w-full justify-center flex flex-row">
-        <Button size="large" className="text-lg">
+        <Button size="large" className="text-lg" onClick={handleModal}>
           Contact us
         </Button>
       </Animated>
