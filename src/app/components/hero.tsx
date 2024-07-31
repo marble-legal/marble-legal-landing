@@ -15,22 +15,13 @@ const outfit = Outfit({ subsets: ["latin"] });
 export default function Hero() {
   const [open, setOpen] = useState(false);
   const [showModal, setShowModal] = useState(false);
-  const handleClose = () => setOpen(!open);
-  const handleModal = () => setShowModal(!showModal);
+  const handleContactUs = () => setShowModal(!showModal);
+  const handleDemo = () => setOpen(!open);
 
   return (
     <section id="hero" className="relative w-full bg-[#E7FEEF]">
-      <ContactUsModal isOpen={showModal} handleClose={handleModal} />
-      {/* <div className="absolute inset-0 w-full h-full z-0">
-        <Image
-          src="/hero-bg.svg"
-          alt="background"
-          layout="fill"
-          objectFit="cover"
-          priority
-        />
-      </div> */}
-      <DemoDrawer isOpen={open} handleClose={handleClose} />
+      <ContactUsModal isOpen={showModal} handleClose={handleContactUs} />
+      <DemoDrawer isOpen={open} handleClose={handleDemo} />
 
       <div className="relative z-10 w-full">
         {/* nav */}
@@ -69,7 +60,11 @@ export default function Hero() {
             </Animated>
             <div className="md:mt-[2.8125rem] mt-[1.5rem] flex flex-row gap-3 w-fit max-md:self-center">
               <Animated variant="moveFromBottom">
-                <Button size="large" variant="primary" onClick={handleClose}>
+                <Button
+                  size="large"
+                  variant="primary"
+                  onClick={handleContactUs}
+                >
                   Contact us
                 </Button>
               </Animated>
@@ -78,7 +73,7 @@ export default function Hero() {
                   variant="secondary"
                   size="medium"
                   className="flex flex-row items-center gap-[0.625rem] h-full"
-                  onClick={handleClose}
+                  onClick={handleDemo}
                 >
                   <Image
                     src="/play.svg"
