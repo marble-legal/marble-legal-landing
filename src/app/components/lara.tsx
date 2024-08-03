@@ -115,10 +115,11 @@ function MobileProcess() {
               <div className="bg-[#DCD5C6] p-2 rounded-full">
                 <div className="h-3 w-3 bg-[#B85042] rounded-full"></div>
               </div>
-              <h3 className="text-base font-[700]">AI-Powered Chat</h3>
+              <h3 className="text-base font-[700]">Contract Drafting</h3>
             </div>
             <h4 className="pl-[3rem] text-[0.875rem] leading-[160%]">
-              Engage in real-time conversations for instant legal guidance.
+              Effortlessly generate customized contracts based on your specific
+              needs.
             </h4>
           </div>
           <div className="ml-8 process_img-wrapper !p-[0.625rem]">
@@ -147,10 +148,10 @@ function MobileProcess() {
               <div className="bg-[#DCD5C6] p-2 rounded-full">
                 <div className="h-3 w-3 bg-[#B85042] rounded-full"></div>
               </div>
-              <h3 className="text-base font-[700]">AI-Powered Chat</h3>
+              <h3 className="text-base font-[700]">Contract Analysis</h3>
             </div>
             <h4 className="pl-[3rem] text-[0.875rem] leading-[160%]">
-              Engage in real-time conversations for instant legal guidance.
+              Upload and analyze existing contracts for detailed insights.
             </h4>
           </div>
           <div className="ml-8 process_img-wrapper !p-[0.625rem]">
@@ -171,10 +172,10 @@ function MobileProcess() {
               <div className="bg-[#DCD5C6] p-2 rounded-full">
                 <div className="h-3 w-3 bg-[#B85042] rounded-full"></div>
               </div>
-              <h3 className="text-base font-[700]">AI-Powered Chat</h3>
+              <h3 className="text-base font-[700]">Business Formation</h3>
             </div>
             <h4 className="pl-[3rem] text-[0.875rem] leading-[160%]">
-              Engage in real-time conversations for instant legal guidance.
+              Simplify the process of forming new business entities.
             </h4>
           </div>
           <div className="ml-8 process_img-wrapper !p-[0.625rem]">

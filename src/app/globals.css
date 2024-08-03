@@ -116,9 +116,14 @@
   display: grid;
   justify-items: center;
   alig-self: center;
+  margin-top: 0.25rem;
 }
 
 .process_description {
   font-size: 1rem;
   line-height: 160%;
+}
+
+.heading-style-h3-smaller {
+  font-size: 1.4375rem;
 }

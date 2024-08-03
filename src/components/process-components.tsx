@@ -42,7 +42,7 @@ const ProcessComponent = () => {
   return (
     <div className="process_component max-w-[1100px] !mx-auto px-4 transition-all">
       <div className="process_col-text sticky top-1/2 transform translate-y-1/2 w-1/2">
-        <div className="process_list flex flex-col gap-[2.5rem] relative">
+        <div className="process_list flex flex-col gap-[2.5rem] relative transition-all">
           <Image
             loading="lazy"
             src="/line.svg"
@@ -52,7 +52,17 @@ const ProcessComponent = () => {
             className="absolute left-[11px] h-full"
           />
 
-          <div className="process_text flex flex-row items-center gap-3">
+          <div className="process_text flex flex-row items-center gap-3 relative">
+            {/* <Image
+              loading="lazy"
+              src="/line.svg"
+              alt="line"
+              height={100}
+              width={1}
+              layout="intrinsic"
+              className="absolute left-[11.5px] h-full top-[20px]"
+            /> */}
+
             <div className="w-fit self-start">
               <div className="process_icon transition-all">
                 {/* <div className="process_no">1</div> */}
@@ -60,10 +70,10 @@ const ProcessComponent = () => {
               </div>
             </div>
             <div className="flex flex-col w-fit">
-              <h3 className="heading-style-h3-smaller is-process_title">
+              <h3 className="heading-style-h3-smaller is-process_title transition-all duration-400">
                 AI-Powered Chat
               </h3>
-              <h4 className="process_description">
+              <h4 className="process_description transition-all duration-400">
                 Engage in real-time conversations for instant legal guidance.
               </h4>
             </div>
@@ -76,10 +86,10 @@ const ProcessComponent = () => {
               </div>
             </div>
             <div className="flex flex-col w-fit">
-              <h3 className="heading-style-h3-smaller is-process_title">
+              <h3 className="heading-style-h3-smaller is-process_title transition-all duration-400">
                 Contract Drafting
               </h3>
-              <h4 className="process_description">
+              <h4 className="process_description transition-all duration-400">
                 Effortlessly generate customized contracts based on your
                 specific needs.
               </h4>
@@ -93,11 +103,11 @@ const ProcessComponent = () => {
               </div>
             </div>
             <div className="flex flex-col w-fit">
-              <h3 className="heading-style-h3-smaller is-process_title">
-                Business Formation
+              <h3 className="heading-style-h3-smaller is-process_title transition-all duration-400">
+                Contract Analysis
               </h3>
-              <h4 className="process_description">
-                Simplify the process of forming new business entities.
+              <h4 className="process_description transition-all duration-400">
+                Upload and analyze existing contracts for detailed insights.
               </h4>
             </div>
           </div>
@@ -109,11 +119,11 @@ const ProcessComponent = () => {
               </div>
             </div>
             <div className="flex flex-col w-fit">
-              <h3 className="heading-style-h3-smaller is-process_title">
-                Contract Analysis
+              <h3 className="heading-style-h3-smaller is-process_title transition-all duration-400">
+                Business Formation
               </h3>
-              <h4 className="process_description">
-                Upload and analyze existing contracts for detailed insights.
+              <h4 className="process_description transition-all duration-400">
+                Simplify the process of forming new business entities.
               </h4>
             </div>
           </div>
