@@ -26,7 +26,7 @@ export default function VS() {
         </h3>
       </Animated>
       <Animated>
-        <p className="md:mt-[2rem] mt-[0.8125rem] md:mb-[4rem] mb-[2.5rem] text-center text-[1.25rem]">
+        <p className="md:mt-[1rem] mt-[0.8125rem] md:mb-[4rem] mb-[2.5rem] text-center text-[1.25rem]">
           Save on legal costs with Marble
         </p>
       </Animated>
