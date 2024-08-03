@@ -17,7 +17,7 @@ export default function Features() {
   return (
     <section
       id="features"
-      className="md:py-[7.5rem] py-24 px-4 flex flex-col md:gap-[4rem] gap-[2rem]"
+      className="md:py-[7.5rem] md:pb-[4rem] py-24 px-4 flex flex-col md:gap-[4rem] gap-[2rem]"
     >
       <ContactUsModal isOpen={showModal} handleClose={handleModal} />
 

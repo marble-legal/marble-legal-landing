@@ -46,6 +46,7 @@ export default function Lara() {
           <Button
             size="large"
             className="max-md:px-[1.75rem] max-md:py-[0.875rem] max-md:text-[1.25rem]"
+            onClick={handleContactUs}
           >
             Join the waitlist
           </Button>
