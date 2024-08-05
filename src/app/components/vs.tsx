@@ -20,13 +20,13 @@ export default function VS() {
             outfit.className
           )}
         >
-          Hiring a <span className="text-[#B85042]">lawyer</span> vs using{" "}
+          Hiring a <span className="text-[#B85042]">lawyer</span> vs{" "}
           <br className="max-md:hidden" />
-          <span className="text-[#4AA064]">Marble</span>
+          using <span className="text-[#4AA064]">Marble</span>
         </h3>
       </Animated>
       <Animated>
-        <p className="md:mt-[1rem] mt-[0.8125rem] md:mb-[4rem] mb-[2.5rem] text-center text-[1.25rem]">
+        <p className="md:mt-[1rem] mt-[0.8125rem] md:mb-[4rem] mb-[2.5rem] text-center text-[1rem]">
           Save on legal costs with Marble
         </p>
       </Animated>
@@ -87,7 +87,7 @@ export default function VS() {
         <Animated
           variant="moveFromBottom"
           delay={0.25}
-          className="bg-[#F0FFF0] rounded-[16px] w-full relative py-[4.625rem] px-[2.75rem] items-center justify-center flex flex-col gap-[1.4375rem]"
+          className="bg-[#F0FFF0] rounded-[16px] w-full relative py-[4.625rem] px-[2.75rem] items-center justify-center flex flex-col gap-[1.4375rem] self-start h-full"
         >
           <Image
             src="/green-hue.svg"

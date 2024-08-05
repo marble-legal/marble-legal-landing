@@ -24,8 +24,8 @@ const Animated = forwardRef<HTMLDivElement, AnimatedProps>(
   ) => {
     const variants = {
       opacity: {
-        hidden: { opacity: 0 },
-        visible: { opacity: 1 },
+        hidden: { opacity: 0, transform: "scale(0.95)" },
+        visible: { opacity: 1, transform: "scale(1)" },
       },
       moveFromBottom: {
         hidden: { opacity: 0, y: 50 },

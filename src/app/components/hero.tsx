@@ -88,6 +88,7 @@ export default function Hero() {
             </div>
           </div>
 
+          {/* TODO: scale animation on image */}
           <Animated>
             <div className="relative w-full h-full max-h-[300px] items-center flex flex-col justify-center">
               <Image
