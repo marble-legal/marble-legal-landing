@@ -32,6 +32,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .process_img-wrapper {
   background: #ccfedc;
   padding: 3.3438rem 1.5313rem;

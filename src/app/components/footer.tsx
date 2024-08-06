@@ -16,36 +16,47 @@ export default function Footer() {
             <Image src="/logo.svg" alt="Marble Legal" width={48} height={36} />
           </div>
           <nav className="flex-grow items-center flex flex-row justify-center max-md:hidden">
-            <ul className="flex flex-row max-md:flex-wrap gap-4 justify-center">
-              <li>
+            <ul className="flex flex-row max-md:flex-wrap gap-4 justify-center [&_li]:transition-all">
+              <li className="hover:-translate-y-0.5">
                 <a href="#about">About</a>
               </li>
-              <li>
+              <li className="hover:-translate-y-0.5">
                 <a href="#features">Features</a>
               </li>
-              <li>
+              <li className="hover:-translate-y-0.5">
                 <a href="#lara">LARA</a>
               </li>
-              <li>
+              <li className="hover:-translate-y-0.5">
                 <a href="#faqs">FAQs</a>
               </li>
-              <li>
+              <li className="hover:-translate-y-0.5">
                 <a href="#testimonials">Testimonials</a>
               </li>
-              <li>
+              <li className="hover:-translate-y-0.5">
                 <a href="#contact-us">Contact us</a>
               </li>
             </ul>
           </nav>
-          <div className="flex flex-row gap-2 flex-1 place-content-end">
-            <Image src="/x.svg" alt="x" width={32} height={32} />
-            <Image src="/linkedin.svg" alt="linkedin" width={32} height={32} />
-            <Image
-              src="/instagram.svg"
-              alt="instagram"
-              width={32}
-              height={32}
-            />
+          <div className="flex flex-row gap-2 flex-1 place-content-end [&_button]:transition-all">
+            <button className="hover:-translate-y-0.5">
+              <Image src="/x.svg" alt="x" width={32} height={32} />
+            </button>
+            <button className="hover:-translate-y-0.5">
+              <Image
+                src="/linkedin.svg"
+                alt="linkedin"
+                width={32}
+                height={32}
+              />
+            </button>
+            <button className="hover:-translate-y-0.5">
+              <Image
+                src="/instagram.svg"
+                alt="instagram"
+                width={32}
+                height={32}
+              />
+            </button>
           </div>
         </div>
         <nav className="flex-grow items-center flex flex-row justify-center md:hidden max-md:mt-[2.25rem] max-md:w-full">
@@ -76,15 +87,18 @@ export default function Footer() {
           Copyright © 2024 Marble All rights reserved{" "}
           <br className="md:hidden" />
           <span className="max-md:hidden">| </span>
-          <span className="underline">Terms and conditions</span> |{" "}
-          <span className="underline">Privacy policy</span>
+          <span className="hover:underline cursor-pointer">
+            Terms and conditions
+          </span>{" "}
+          |{" "}
+          <span className="hover:underline cursor-pointer">Privacy policy</span>
         </span>
         <h6 className="text-[0.8125rem] font-medium text-[#919191] md:absolute bottom-0 left-0 max-md:mt-[1.5rem] max-md:mx-auto">
           Developed by{" "}
           <Link
             href="https://micro1.ai"
             target="_blank"
-            className="text-[#4AA064]"
+            className="text-[#4AA064] hover:underline"
           >
             micro1.ai
           </Link>
