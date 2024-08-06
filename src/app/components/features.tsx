@@ -90,7 +90,7 @@ function Card({ title, description, image, delay }: any) {
     <Animated
       delay={delay}
       variant="moveFromBottom"
-      className="flex flex-col md:w-[calc(33.33%-1rem)] border border-[#D7D7D7] rounded-[1.5rem] px-[2rem] py-[2.375rem] items-center text-center flex-grow min-h-[356px]"
+      className="flex flex-col md:w-[calc(33.33%-1rem)] border border-[#D7D7D7] rounded-[1.5rem] px-[2rem] py-[2.375rem] items-center text-center flex-grow h-fit md:h-auto md:min-h-[356px]"
     >
       <Image
         src={image}
