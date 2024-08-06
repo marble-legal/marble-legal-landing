@@ -10,6 +10,63 @@ import { motion } from "framer-motion";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
+const sampleFeedback = [
+  {
+    feedback:
+      "Marble has completely transformed our legal processes. Their expert guidance and AI tools have saved us time and money. We couldn't be happier with the results!",
+    user: {
+      image: "/user1.svg",
+      name: "Sales Training & Development",
+      role: "Pharmaceuticals",
+    },
+  },
+  {
+    feedback:
+      "Thanks to Marble, navigating complex legal issues has become much easier. Their innovative approach and professional support have been invaluable to our company.",
+    user: {
+      image: "/user2.svg",
+      name: "Legal Operations Manager",
+      role: "Healthcare",
+    },
+  },
+  {
+    feedback:
+      "Marble's platform is a game-changer for our legal team. Their tools have streamlined our processes and improved our efficiency. We highly recommend their services!",
+    user: {
+      image: "/user3.svg",
+      name: "General Counsel",
+      role: "Technology",
+    },
+  },
+  {
+    feedback:
+      "Marble has completely transformed our legal processes. Their expert guidance and AI tools have saved us time and money. We couldn't be happier with the results!",
+    user: {
+      image: "/user1.svg",
+      name: "Sales Training & Development",
+      role: "Pharmaceuticals",
+    },
+  },
+  {
+    feedback:
+      "Thanks to Marble, navigating complex legal issues has become much easier. Their innovative approach and professional support have been invaluable to our company.",
+    user: {
+      image: "/user2.svg",
+      name: "Legal Operations Manager",
+      role: "Healthcare",
+    },
+  },
+  {
+    feedback:
+      "Marble's platform is a game-changer for our legal team. Their tools have streamlined our processes and improved our efficiency. We highly recommend their services!",
+    user: {
+      image: "/user3.svg",
+      name: "General Counsel",
+      role: "Technology",
+    },
+  },
+];
+
 export default function Testimonials() {
   const containerRef = useRef<HTMLDivElement | null>(null);
 
@@ -100,55 +157,9 @@ export default function Testimonials() {
           className="flex flex-row gap-[1.5rem] md:px-16 px-4 pb-[6.625rem]"
           ref={containerRef}
         >
-          <FeedbackCard
-            user={{
-              name: "John Doe",
-              role: "CEO, Company",
-            }}
-          />
-          <FeedbackCard
-            user={{
-              name: "Jane Doe 1",
-              role: "CTO, Company",
-            }}
-          />
-          <FeedbackCard
-            user={{
-              name: "Jane Doe 2",
-              role: "CTO, Company",
-            }}
-          />
-          <FeedbackCard
-            user={{
-              name: "Jane Doe 3",
-              role: "CTO, Company",
-            }}
-          />
-          <FeedbackCard
-            user={{
-              name: "Jane Doe 4",
-              role: "CTO, Company",
-            }}
-          />
-          {/* Duplicate content to ensure seamless scrolling */}
-          <FeedbackCard
-            user={{
-              name: "John Doe 5",
-              role: "CEO, Company",
-            }}
-          />
-          <FeedbackCard
-            user={{
-              name: "Jane Doe 5",
-              role: "CTO, Company",
-            }}
-          />
-          <FeedbackCard
-            user={{
-              name: "John Doe 5",
-              role: "CEO, Company",
-            }}
-          />
+          {sampleFeedback.map(({ feedback, user }, index) => (
+            <FeedbackCard key={index} feedback={feedback} user={user} />
+          ))}
         </motion.div>
       </div>
     </section>

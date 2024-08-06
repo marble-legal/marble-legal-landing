@@ -3,22 +3,21 @@ import Image from "next/image";
 
 function FeedbackCard({
   user,
+  feedback,
 }: {
+  feedback: string;
   user: {
+    image: string;
     name: string;
     role: string;
   };
 }) {
   return (
     <div className="relative p-[1.75rem] border-[3px] border-white rounded-[16px] shadow-[3px_14px_26px_0px_rgba(30,109,43,0.06)] bg-[rgba(255,255,255,0.33)] min-w-[375px] h-[314px]">
-      <p className="text-[#575757]">
-        Thanks to Marble, navigating complex legal issues has become much
-        easier. Their innovative approach and professional support have been
-        invaluable to our company.
-      </p>
+      <p className="text-[#575757]">{feedback}</p>
       <div className="absolute bottom-[1.75rem] flex flex-row gap-3 items-center">
         <Image
-          src="/logo.svg"
+          src={user.image}
           alt="user"
           height={62}
           width={62}
