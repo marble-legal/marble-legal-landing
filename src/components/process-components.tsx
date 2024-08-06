@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import { useEffect } from "react";
 import { gsap } from "gsap";
@@ -42,26 +43,38 @@ const ProcessComponent = () => {
   return (
     <div className="process_component max-w-[1100px] !mx-auto px-4 transition-all">
       <div className="process_col-text sticky top-1/2 transform translate-y-1/2 w-1/2">
-        <div className="process_list flex flex-col gap-[2.5rem] relative transition-all">
-          <Image
+        <div className="process_list flex flex-col relative transition-all">
+          {/* <Image
             loading="lazy"
             src="/line.svg"
             alt="line"
             height={300}
             width={2}
             className="absolute left-[11px] h-full"
-          />
+          /> */}
 
-          <div className="process_text flex flex-row items-center gap-3 relative">
-            {/* <Image
-              loading="lazy"
-              src="/line.svg"
-              alt="line"
-              height={100}
-              width={1}
-              layout="intrinsic"
-              className="absolute left-[11.5px] h-full top-[20px]"
-            /> */}
+          <div className="process_text flex flex-row items-center gap-3 relative pb-[2.5rem]">
+            <div className="line-container absolute left-[11px] top-[20px] h-full">
+              <svg
+                width="1px"
+                height="100%"
+                viewBox="0 0 1 100"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="none"
+                className="dotted-line"
+              >
+                <line
+                  opacity="0.4"
+                  x1="0.5"
+                  y1="0"
+                  x2="0.5"
+                  y2="100"
+                  stroke="#B85042"
+                  strokeDasharray="3 3"
+                />
+              </svg>
+            </div>
 
             <div className="w-fit self-start">
               <div className="process_icon transition-all">
@@ -78,7 +91,28 @@ const ProcessComponent = () => {
               </h4>
             </div>
           </div>
-          <div className="process_text flex flex-row items-center gap-3">
+          <div className="process_text flex flex-row items-center gap-3 relative pb-[2.5rem]">
+            <div className="line-container absolute left-[11px] top-[20px] h-full">
+              <svg
+                width="1px"
+                height="100%"
+                viewBox="0 0 1 100"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="none"
+                className="dotted-line"
+              >
+                <line
+                  opacity="0.4"
+                  x1="0.5"
+                  y1="0"
+                  x2="0.5"
+                  y2="100"
+                  stroke="#B85042"
+                  strokeDasharray="3 3"
+                />
+              </svg>
+            </div>
             <div className="w-fit self-start">
               <div className="process_icon transition-all">
                 {/* <div className="process_no">1</div> */}
@@ -95,7 +129,28 @@ const ProcessComponent = () => {
               </h4>
             </div>
           </div>
-          <div className="process_text flex flex-row items-center gap-3">
+          <div className="process_text flex flex-row items-center gap-3 relative pb-[2.5rem]">
+            <div className="line-container absolute left-[11px] top-[20px] h-full">
+              <svg
+                width="1px"
+                height="100%"
+                viewBox="0 0 1 100"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="none"
+                className="dotted-line"
+              >
+                <line
+                  opacity="0.4"
+                  x1="0.5"
+                  y1="0"
+                  x2="0.5"
+                  y2="100"
+                  stroke="#B85042"
+                  strokeDasharray="3 3"
+                />
+              </svg>
+            </div>
             <div className="w-fit self-start">
               <div className="process_icon transition-all">
                 {/* <div className="process_no">1</div> */}
