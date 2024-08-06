@@ -37,7 +37,16 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
             exit="hidden"
             onClick={(e) => e.stopPropagation()} // Prevent click from closing modal
           >
-            <button className="absolute top-2 right-2" onClick={onClose}>
+            <button
+              className="md:hidden absolute top-2 right-2 text-3xl"
+              onClick={onClose}
+            >
+              &times;
+            </button>
+            <button
+              className="hidden md:block absolute -top-2 -right-8 text-3xl text-[#EEEEEE] hover:text-white"
+              onClick={onClose}
+            >
               &times;
             </button>
             {children}
