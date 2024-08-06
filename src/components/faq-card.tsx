@@ -20,7 +20,7 @@ export default function FaqCard({ title, description }: any) {
         className={clsx(
           "md:p-[1.875rem] p-6 justify-between text-[1.0625rem] flex flex-row items-center w-full transition-all text-start max-md:gap-4",
           outfit.className,
-          isOpen && "text-[#4AA064]"
+          isOpen && "text-[#4AA064] !pb-4"
         )}
       >
         {title}
