@@ -26,7 +26,7 @@ export default function Testimonials() {
     // Create the tween animation
     const scrollTween = gsap.to(element, {
       x: -fullScrollDistance, // Move left by the half of the duplicated content
-      duration: 20, // Adjust duration for desired speed
+      duration: 40, // Adjust duration for desired speed
       ease: "linear", // Smooth, constant speed
       repeat: -1, // Infinite scroll
       paused: true, // Start paused
