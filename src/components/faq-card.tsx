@@ -14,7 +14,7 @@ export default function FaqCard({ title, description }: any) {
   const toggleOpen = () => setIsOpen(!isOpen);
 
   return (
-    <div className="border-[#B8D1B8] border rounded-[16px] md:w-[712px] w-full">
+    <div className="hover:border-opacity-60 border-[#B8D1B8] border rounded-[16px] md:w-[712px] w-full">
       <button
         onClick={toggleOpen}
         className={clsx(
