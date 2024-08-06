@@ -95,7 +95,7 @@ export default function Testimonials() {
           What Our Users Say
         </h3>
       </Animated>
-      <div className="relative w-full overflow-auto">
+      <div className="testimonials relative w-full overflow-auto">
         <motion.div
           className="flex flex-row gap-[1.5rem] md:px-16 px-4 pb-[6.625rem]"
           ref={containerRef}
