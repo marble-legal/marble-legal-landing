@@ -16,7 +16,7 @@ export default function Footer() {
             <Image src="/logo.svg" alt="Marble Legal" width={48} height={36} />
           </div>
           <nav className="flex-grow items-center flex flex-row justify-center max-md:hidden">
-            <ul className="flex flex-row max-md:flex-wrap gap-4 justify-center [&_li]:transition-all">
+            <ul className="flex flex-row max-md:flex-wrap gap-[29px] justify-center [&_li]:transition-all">
               <li className="hover:-translate-y-0.5">
                 <a href="#about">About</a>
               </li>
