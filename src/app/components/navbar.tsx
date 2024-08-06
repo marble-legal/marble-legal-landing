@@ -4,10 +4,18 @@ import Button from "@/components/button";
 import Link from "next/link";
 import ContactUsModal from "@/components/contactus-modal";
 import { useState } from "react";
+import { AnimatePresence } from "framer-motion";
+import Animated from "@/components/animated";
 
 export default function Navbar() {
   const [showModal, setShowModal] = useState(false);
   const handleModal = () => setShowModal(!showModal);
+  const [isPopoverOpen, setPopoverOpen] = useState(false);
+
+  const togglePopover = () => {
+    setPopoverOpen(!isPopoverOpen);
+  };
+
   return (
     <>
       <ContactUsModal isOpen={showModal} handleClose={handleModal} />
@@ -38,13 +46,38 @@ export default function Navbar() {
           <Button variant="primary" size="small">
             Contact us
           </Button>
-          <Image src="/menu.svg" alt="menu" width={40} height={40} />
-          {/* <Button variant="secondary" size="small">
-              Create an account
-            </Button>
-            <Button variant="text" size="small">
-              Sign in
-            </Button> */}
+          <button onClick={togglePopover}>
+            <Image src="/menu.svg" alt="menu" width={40} height={40} />
+          </button>
+
+          <AnimatePresence>
+            {isPopoverOpen && (
+              <div className="absolute right-8 mt-12 w-48 bg-white rounded-md shadow-lg z-10 p-[0.625rem]">
+                <Animated className="flex flex-col gap-[0.625rem]">
+                  <Link
+                    href="https://dev.app.marblels.com/login"
+                    className="self-center w-full"
+                  >
+                    <Button
+                      variant="secondary"
+                      size="small"
+                      className="w-full !border-[#B85042] border-[1px]"
+                    >
+                      Sign in
+                    </Button>
+                  </Link>
+                  <Link
+                    href="https://dev.app.marblels.com/register"
+                    className="w-full"
+                  >
+                    <Button variant="primary" size="small" className="w-full">
+                      Create an account
+                    </Button>
+                  </Link>
+                </Animated>
+              </div>
+            )}
+          </AnimatePresence>
         </div>
       </nav>
     </>

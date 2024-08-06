@@ -24,7 +24,7 @@ export default function Contract() {
         className="absolute bottom-0 left-0 z-[0]"
         priority
       />
-      <Animated className="flex flex-row items-center flex-wrap">
+      <Animated className="flex flex-row items-center max-lg:flex-wrap">
         <div className="flex flex-col gap-[1.8125rem]">
           <h3
             className={clsx(
