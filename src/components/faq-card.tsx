@@ -41,7 +41,7 @@ export default function FaqCard({ title, description }: any) {
             transition={{ duration: 0.1 }}
             className="overflow-hidden"
           >
-            <p className="px-[1.875rem] pb-[1.875rem] text-[#717171] text-[0.9375rem]">
+            <p className="md:px-[1.875rem] px-6 pb-[1.875rem] text-[#717171] text-[0.9375rem]">
               {description}
             </p>
           </motion.div>
