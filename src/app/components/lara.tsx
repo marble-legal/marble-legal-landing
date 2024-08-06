@@ -16,10 +16,10 @@ export default function Lara() {
   const handleContactUs = () => setShowModal(!showModal);
 
   return (
-    <section id="lara" className="w-full px-4">
+    <section id="lara" className="w-full lg:px-4">
       <ContactUsModal isOpen={showModal} handleClose={handleContactUs} />
 
-      <div className="bg-[#E6FDEE] md:py-[7.5rem] py-10 max-md:px-4 w-full rounded-[30px] flex flex-col gap-[4rem]">
+      <div className="bg-[#E6FDEE] md:py-[7.5rem] py-10 max-md:px-4 w-full lg:rounded-[30px] flex flex-col gap-[4rem]">
         <Animated className="flex flex-col gap-[1.8125rem]">
           <h3
             className={clsx(
