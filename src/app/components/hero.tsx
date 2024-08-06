@@ -90,7 +90,7 @@ export default function Hero() {
 
           {/* TODO: scale animation on image */}
           <Animated>
-            <div className="relative w-full h-full max-h-[300px] items-center flex flex-col justify-center">
+            <div className="relative w-full h-full max-h-[300px] items-center flex flex-col justify-center md:mt-[4rem]">
               <Image
                 src="/hero.svg"
                 alt="hero"
