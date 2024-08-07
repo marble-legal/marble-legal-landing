@@ -13,8 +13,8 @@ export default function DemoDrawer({
     <Modal isOpen={isOpen} onClose={handleClose}>
       <video width="1024px" controls autoPlay className="rounded-[8px]">
         <source
-          src="https://s3.amazonaws.com/dev.assets.marblels.com/draft-analysis-2.webm"
-          type="video/webm"
+          src="https://s3.amazonaws.com/dev.assets.marblels.com/Lara+Demo+-+Techstars.mp4"
+          type="video/mp4"
         />
       </video>
     </Modal>
