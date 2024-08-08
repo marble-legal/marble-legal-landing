@@ -28,7 +28,7 @@ export default function Hero() {
         <Navbar />
 
         {/* hero */}
-        <div className="flex flex-row max-md:flex-wrap-reverse justify-between items-center md:h-[80vh] md:pl-[8rem] md:pr-[2.5rem] px-4 py-8 pb-[5rem]">
+        <div className="flex flex-row max-md:flex-wrap-reverse justify-between items-center md:h-[80vh] md:pl-[8rem] md:pr-[2.5rem] px-4 py-8 pb-[5rem] gap-4">
           <div className="flex flex-col max-w-[550px] z-10">
             <Animated>
               <h1
@@ -90,12 +90,12 @@ export default function Hero() {
 
           {/* TODO: scale animation on image */}
           <Animated>
-            <div className="relative w-full h-full max-h-[300px] items-center flex flex-col justify-center md:mt-[4rem]">
+            <div className="relative w-full h-full max-h-[1000px] items-center flex flex-col justify-center md:mr-[12rem]">
               <Image
                 src="/hero.svg"
                 alt="hero"
                 layout="responsive"
-                width={450}
+                width={700}
                 height={10}
                 // objectFit="none"
                 className="z-[2] object-scale-down"
