@@ -25,19 +25,19 @@ export default function Navbar() {
           <Button variant="primary" size="small" onClick={handleModal}>
             Contact us
           </Button>
-          {/* <Link href="https://dev.app.marblels.com/register">
-            <Button variant="secondary" size="small">
-              Create an account
-            </Button>
-          </Link>
-          <Link
+          {/* <Link href="https://dev.app.marblels.com/register"> */}
+          <Button variant="secondary" size="small">
+            Create an account
+          </Button>
+          {/* </Link> */}
+          {/* <Link
             href="https://dev.app.marblels.com/login"
             className="self-center"
-          >
-            <Button variant="text" size="small">
-              Sign in
-            </Button>
-          </Link> */}
+          > */}
+          <Button variant="text" size="small">
+            Sign in
+          </Button>
+          {/* </Link> */}
         </div>
       </nav>
       <nav className="flex md:hidden justify-between items-center w-full px-[1.5rem] py-[1.25rem] border-b border-white">
@@ -50,34 +50,34 @@ export default function Navbar() {
             <Image src="/menu.svg" alt="menu" width={40} height={40} />
           </button>
 
-          {/* <AnimatePresence>
+          <AnimatePresence>
             {isPopoverOpen && (
               <div className="absolute right-8 mt-12 w-48 bg-white rounded-md shadow-lg z-10 p-[0.625rem]">
                 <Animated className="flex flex-col gap-[0.625rem]">
-                  <Link
+                  {/* <Link
                     href="https://dev.app.marblels.com/login"
                     className="self-center w-full"
+                  > */}
+                  <Button
+                    variant="secondary"
+                    size="small"
+                    className="w-full !border-[#B85042] border-[1px]"
                   >
-                    <Button
-                      variant="secondary"
-                      size="small"
-                      className="w-full !border-[#B85042] border-[1px]"
-                    >
-                      Sign in
-                    </Button>
-                  </Link>
-                  <Link
+                    Sign in
+                  </Button>
+                  {/* </Link> */}
+                  {/* <Link
                     href="https://dev.app.marblels.com/register"
                     className="w-full"
-                  >
-                    <Button variant="primary" size="small" className="w-full">
-                      Create an account
-                    </Button>
-                  </Link>
+                  > */}
+                  <Button variant="primary" size="small" className="w-full">
+                    Create an account
+                  </Button>
+                  {/* </Link> */}
                 </Animated>
               </div>
             )}
-          </AnimatePresence> */}
+          </AnimatePresence>
         </div>
       </nav>
     </>
