@@ -25,7 +25,7 @@ export default function Navbar() {
           <Button variant="primary" size="small" onClick={handleModal}>
             Contact us
           </Button>
-          <Link href="https://dev.app.marblels.com/register">
+          {/* <Link href="https://dev.app.marblels.com/register">
             <Button variant="secondary" size="small">
               Create an account
             </Button>
@@ -37,7 +37,7 @@ export default function Navbar() {
             <Button variant="text" size="small">
               Sign in
             </Button>
-          </Link>
+          </Link> */}
         </div>
       </nav>
       <nav className="flex md:hidden justify-between items-center w-full px-[1.5rem] py-[1.25rem] border-b border-white">
@@ -50,7 +50,7 @@ export default function Navbar() {
             <Image src="/menu.svg" alt="menu" width={40} height={40} />
           </button>
 
-          <AnimatePresence>
+          {/* <AnimatePresence>
             {isPopoverOpen && (
               <div className="absolute right-8 mt-12 w-48 bg-white rounded-md shadow-lg z-10 p-[0.625rem]">
                 <Animated className="flex flex-col gap-[0.625rem]">
@@ -77,7 +77,7 @@ export default function Navbar() {
                 </Animated>
               </div>
             )}
-          </AnimatePresence>
+          </AnimatePresence> */}
         </div>
       </nav>
     </>

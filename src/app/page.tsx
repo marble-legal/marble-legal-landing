@@ -26,7 +26,7 @@ export default function Home() {
       <Lara />
       <Contract />
       <Faqs />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Contactus />
       <Footer />
     </main>
