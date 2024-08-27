@@ -38,25 +38,35 @@ export default function Footer() {
             </ul>
           </nav>
           <div className="flex flex-row gap-2 flex-1 place-content-end [&_button]:transition-all">
-            <button className="hover:-translate-y-0.5">
+            <a
+              href="https://x.com/marblelegal"
+              className="hover:-translate-y-0.5"
+            >
               <Image src="/x.svg" alt="x" width={32} height={32} />
-            </button>
-            <button className="hover:-translate-y-0.5">
+            </a>
+            <a
+              href="https://www.linkedin.com/company/marblelegalsolutions/"
+              className="hover:-translate-y-0.5"
+            >
               <Image
                 src="/linkedin.svg"
                 alt="linkedin"
                 width={32}
                 height={32}
               />
-            </button>
-            <button className="hover:-translate-y-0.5">
+            </a>
+            <a
+              href="https://www.instagram.com/marblelegalsolutions/"
+              target="_blank"
+              className="hover:-translate-y-0.5"
+            >
               <Image
                 src="/instagram.svg"
                 alt="instagram"
                 width={32}
                 height={32}
               />
-            </button>
+            </a>
           </div>
         </div>
         <nav className="flex-grow items-center flex flex-row justify-center md:hidden max-md:mt-[2.25rem] max-md:w-full">

@@ -32,9 +32,9 @@ export default function Lara() {
           </h3>
           <p className="leading-[180%] md:text-[1.25rem] text-[0.875rem] max-w-[792px] text-center mx-auto">
             Get ready for LARA, the AI-powered legal assistant transforming
-            legal tasks. From contract creation to business formation, LARA
-            provides the tools and guidance to navigate the legal landscape with
-            ease. Below are some key features:
+            legal tasks. From contract creations to business formation, LARA
+            provides the tools to navigate the legal landscape with ease and
+            confidence.
           </p>
         </Animated>
         <div className="max-md:hidden">

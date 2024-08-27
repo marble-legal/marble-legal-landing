@@ -32,8 +32,8 @@ export default function Features() {
             Comprehensive Legal Solutions
           </h3>
           <p className="max-w-[536px] mx-auto">
-            From real estate to personal injury, our legal experts are here to
-            help you navigate any challenge.
+            Need to get rid of language that says legal experts. I would just
+            delete this entire subparagraph
           </p>
         </div>
       </Animated>

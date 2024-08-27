@@ -54,8 +54,8 @@ export default function Hero() {
                 </div>
               </h1>
               <h2 className="leading-[160%] md:text-xl text-[0.875rem] max-md:text-center max-md:max-w-[290px] max-md:mx-auto">
-                Lower your legal costs and empower yourself with our AI-enhanced
-                self-help tools and expert services.
+                Lower legal costs and empower yourself with AI-enhanced legal
+                self-help tools that put the law at your fingertips.
               </h2>
             </Animated>
             <div className="md:mt-[2.8125rem] mt-[1.5rem] flex flex-row gap-3 w-fit max-md:self-center">

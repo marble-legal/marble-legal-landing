@@ -149,12 +149,11 @@ export default function About() {
           </h3>
           <p className="leading-[180%] max-w-[530px] text-center">
             At Marble, we are dedicated to revolutionizing the legal landscape
-            by combining expert legal advice with advanced technology. Our
-            mission is to make legal services more accessible, affordable, and
-            user-friendly for individuals and businesses alike. By leveraging
-            artificial intelligence and cutting-edge strategies, we empower
-            customers to reduce legal costs and take control of their legal
-            needs through self-help resources.
+            by leveraging advanced technology to make legal information
+            accessible, affordable, and user-friendly for individuals and
+            businesses.. By leveraging artificial intelligence and cutting-edge
+            technologies, Marble empowers you to take control and reduce legal
+            costs through self-help resources.
           </p>
         </div>
       </Animated>
