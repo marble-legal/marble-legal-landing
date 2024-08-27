@@ -31,10 +31,10 @@ export default function Features() {
           >
             Comprehensive Legal Solutions
           </h3>
-          <p className="max-w-[536px] mx-auto">
+          {/* <p className="max-w-[536px] mx-auto">
             Need to get rid of language that says legal experts. I would just
             delete this entire subparagraph
-          </p>
+          </p> */}
         </div>
       </Animated>
 
