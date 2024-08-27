@@ -20,7 +20,9 @@ export default function Navbar() {
     <>
       <ContactUsModal isOpen={showModal} handleClose={handleModal} />
       <nav className="md:flex hidden justify-between items-center w-full px-[5rem] py-[1.25rem] border-b border-white">
-        <Image src="/logo.svg" alt="Marble Legal" width={48} height={36} />
+        <Link href="/">
+          <Image src="/logo.svg" alt="Marble Legal" width={48} height={36} />
+        </Link>
         <div className="flex flex-row gap-3">
           <Button variant="primary" size="small" onClick={handleModal}>
             Contact us

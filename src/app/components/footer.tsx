@@ -100,10 +100,10 @@ export default function Footer() {
           <br className="md:hidden" />
           <span className="max-md:hidden">| </span>
           <span className="hover:underline cursor-pointer">
-            Terms and conditions
+            <Link href="/terms-and-services">Terms and conditions</Link>
           </span>{" "}
-          |{" "}
-          <span className="hover:underline cursor-pointer">Privacy policy</span>
+          {/* |{" "}
+          <span className="hover:underline cursor-pointer">Privacy policy</span> */}
         </span>
         <h6 className="text-[0.8125rem] font-medium text-[#919191] md:absolute bottom-0 left-0 max-md:mt-[1.5rem] max-md:mx-auto">
           Developed by{" "}
