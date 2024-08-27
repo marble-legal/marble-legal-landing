@@ -40,12 +40,14 @@ export default function Footer() {
           <div className="flex flex-row gap-2 flex-1 place-content-end [&_button]:transition-all">
             <a
               href="https://x.com/marblelegal"
+              target="_blank"
               className="hover:-translate-y-0.5"
             >
               <Image src="/x.svg" alt="x" width={32} height={32} />
             </a>
             <a
               href="https://www.linkedin.com/company/marblelegalsolutions/"
+              target="_blank"
               className="hover:-translate-y-0.5"
             >
               <Image
