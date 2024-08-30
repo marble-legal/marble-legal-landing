@@ -43,7 +43,7 @@ export default function Footer() {
               <Image src="/x.svg" alt="x" width={32} height={32} />
             </a>
             <a
-              href="https://www.linkedin.com/company/marblelegalsolutions/"
+              href="https://www.linkedin.com/company/marblels/about/"
               target="_blank"
               className="hover:-translate-y-0.5"
             >
@@ -65,6 +65,13 @@ export default function Footer() {
                 width={32}
                 height={32}
               />
+            </a>
+            <a
+              href="https://www.tiktok.com/@marblelegalsolutions"
+              target="_blank"
+              className="hover:-translate-y-0.5"
+            >
+              <Image src="/tiktok.svg" alt="tiktok" width={32} height={32} />
             </a>
           </div>
         </div>
