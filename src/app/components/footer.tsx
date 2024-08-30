@@ -30,9 +30,6 @@ export default function Footer() {
                 <a href="#faqs">FAQs</a>
               </li>
               <li className="hover:-translate-y-0.5">
-                <a href="#testimonials">Testimonials</a>
-              </li>
-              <li className="hover:-translate-y-0.5">
                 <a href="#contact-us">Contact us</a>
               </li>
             </ul>
@@ -84,9 +81,6 @@ export default function Footer() {
             </li>
             <li>
               <a href="#faqs">FAQs</a>
-            </li>
-            <li>
-              <a href="#testimonials">Testimonials</a>
             </li>
             <li>
               <a href="#contact-us">Contact us</a>
