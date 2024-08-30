@@ -69,20 +69,20 @@ export default function Footer() {
           </div>
         </div>
         <nav className="flex-grow items-center flex flex-row justify-center md:hidden max-md:mt-[2.25rem] max-md:w-full">
-          <ul className="grid grid-cols-3 gap-4 justify-center justify-items-center max-md:w-full">
+          <ul className="grid grid-cols-3 gap-4 justify-between md:justify-center md:justify-items-center max-md:w-full">
             <li>
               <a href="#about">About</a>
             </li>
-            <li>
+            <li className="text-center md:text-left">
               <a href="#features">Features</a>
             </li>
-            <li>
+            <li className="text-center md:text-left">
               <a href="#lara">LARA</a>
             </li>
             <li>
               <a href="#faqs">FAQs</a>
             </li>
-            <li>
+            <li className="text-center md:text-left">
               <a href="#contact-us">Contact us</a>
             </li>
           </ul>
