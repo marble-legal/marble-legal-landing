@@ -28,7 +28,7 @@ export default function Hero() {
         <Navbar />
 
         {/* hero */}
-        <div className="flex flex-row max-md:flex-wrap-reverse justify-between items-center md:h-[80vh] md:pl-[8rem] md:pr-[2.5rem] px-4 py-8 pb-[5rem] gap-4">
+        <div className="flex flex-col-reverse lg:flex-row max-lg:pt-12 justify-center lg:justify-between items-center lg:h-[80vh] lg:pl-[8rem] lg:pr-[2.5rem] px-4 py-8 pb-[5rem] gap-4">
           <div className="flex flex-col max-w-[550px] z-10">
             <Animated>
               <h1

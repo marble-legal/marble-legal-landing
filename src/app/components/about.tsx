@@ -138,23 +138,39 @@ export default function About() {
         priority
       />
       <Animated>
-        <div className="flex flex-col gap-[1.875rem] text-center">
-          <h3
-            className={clsx(
-              "font-black md:text-[4rem] text-[1.75rem] leading-[120%]",
-              outfit.className
-            )}
-          >
-            About <span className="text-[#4AA064]">Marble</span>
-          </h3>
-          <p className="leading-[180%] max-w-[530px] text-center">
-            At Marble, we are dedicated to revolutionizing the legal landscape
-            by leveraging advanced technology to make legal information
-            accessible, affordable, and user-friendly for individuals and
-            businesses.. By leveraging artificial intelligence and cutting-edge
-            technologies, Marble empowers you to take control and reduce legal
-            costs through self-help resources.
-          </p>
+        <div className="flex items-center justify-center lg:justify-start flex-wrap">
+          <div className="flex flex-col gap-[1.875rem] text-center">
+            <h3
+              className={clsx(
+                "font-black md:text-[4rem] text-[1.75rem] leading-[120%]",
+                outfit.className
+              )}
+            >
+              About <span className="text-[#4AA064]">Marble</span>
+            </h3>
+            <p className="leading-[180%] max-w-[530px] text-center lg:text-left">
+              At Marble, we are dedicated to revolutionizing the legal landscape
+              by combining expert legal advice with advanced technology. Our
+              mission is to make legal services more accessible, affordable, and
+              user-friendly for individuals and businesses alike. By leveraging
+              artificial intelligence and cutting-edge strategies, we empower
+              customers to reduce legal costs and take control of their legal
+              needs through self-help resources.
+            </p>
+          </div>
+          <div className="hidden lg:block mx-16 w-[1px] h-[332px] bg-[#B9D0C0]" />
+          <div className="mt-12 lg:mt-0 flex flex-col w-full lg:w-[unset] items-center gap-[1.875rem]">
+            <div className="text-lg font-semibold leading-[32.4px]">
+              A proud portfolio company of
+            </div>
+            <Image
+              src="/techstars.svg"
+              alt="about"
+              width={0}
+              height={0}
+              className="w-[289px] lg:w-full md:h-[215px]"
+            />
+          </div>
         </div>
       </Animated>
     </section>
